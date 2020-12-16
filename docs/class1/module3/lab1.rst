@@ -159,6 +159,11 @@ Deploy AS3 WAF Policy
          }
       }
 
+   - Explore the basicwaf.xml policy used for **juice_awaf**
+
+   .. image:: /_static/basicwafpolicy.png
+       :height: 120px
+
 #. Deploy Tenant02 App3 services
 
    - ``terraform  init``
@@ -176,6 +181,19 @@ Deploy AS3 WAF Policy
 
    .. image:: /_static/app3detail.png
        :height: 300px
+
+   - Click **_WAF_App_3** to confirm **juice_awaf** policy associated with App_3
+
+   .. image:: /_static/wafapp3.png
+       :height: 300px
+
+   - Explore BIG-IP GUI **Security -> Overview -> OWASP Compliance** then click **juice_awaf** to view dashboard
+
+   .. image:: /_static/owaspdashboard.png
+       :height: 300px
+
+   .. NOTE:: 
+      Basic waf policy only covers a subset of the OWASP Top 10 vulnerabilities.  Additional configuration is required to acheive greater OWASP compliance.
 
 #. Confirm **serviceMain** is serving up **juiceshop app**
 
@@ -204,7 +222,13 @@ Deploy AS3 WAF Policy
    - You should receive a message that you've successfully solved a challenge
 
    .. NOTE:: 
-      Bonus lab - Replace waf policy with a different external policy.  I recommend creating a new app3a.json and policy name.
+      Bonus lab - Replace waf policy with a different external policy.  I recommend creating a new app3a.json and policy.
 
    .. HINT:: 
-      Follow the github trail and examine the BIG-IP GUI **Security -> Overview -> OWASP Compliance** after applying.
+      Follow the github trail and examine the BIG-IP GUI **Security -> Overview -> OWASP Compliance** after applying. (https://raw.githubusercontent.com/gotspam/f5-lab-days-hashi-basics/master/assets/lab3/owaspwaf.xml)
+
+   .. raw:: html
+
+       <div style="text-align: center; margin-bottom: 2em;">
+       <iframe width="1120" height="630" src="https://www.youtube.com/embed/Eu6jZ8XDGsE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </div>
