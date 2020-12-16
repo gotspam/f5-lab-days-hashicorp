@@ -162,7 +162,7 @@ Deploy AS3 WAF Policy
    - Explore the basicwaf.xml policy used for **juice_awaf**
 
    .. image:: /_static/basicwafpolicy.png
-       :height: 150px
+       :height: 120px
 
 #. Deploy Tenant02 App3 services
 
