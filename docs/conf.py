@@ -24,9 +24,9 @@ from sphinx.errors import VersionRequirementError
 
 # -- Project information -----------------------------------------------------
 
-project = u'NGINX App Protect'
-copyright = u'2020, Matthieu Dierick'
-author = u'Matthieu Dierick'
+project = u'F5 and Hashicorp Basics'
+copyright = u'2020, Ed Rabago'
+author = u'Ed Rabago'
 
 # The short X.Y version
 version = u''
@@ -109,7 +109,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'NGINXAppProtectdoc'
+htmlhelp_basename = 'F5andHashicorpdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -136,8 +136,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'NGINXAppProtect.tex', u'NGINX App Protect Documentation',
-     u'Matthieu Dierick', 'manual'),
+    (master_doc, 'F5andHashicorp.tex', u'F5 and Hashicorp Basics Documentation',
+     u'Ed Rabago', 'manual'),
 ]
 
 
@@ -146,7 +146,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'nginxappprotect', u'NGINX App Protect Documentation',
+    (master_doc, 'F5andHashicorp', u'F5 and Hashicorp Basics Documentation',
      [author], 1)
 ]
 
@@ -157,8 +157,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'NGINXAppProtect', u'NGINX App Protect Documentation',
-     author, 'NGINXAppProtect', 'One line description of project.',
+    (master_doc, 'F5andHashicorp', u'F5 and Hashicorp Basics Documentation',
+     author, 'F5andHashicorp', 'One line description of project.',
      'Miscellaneous'),
 ]
 
